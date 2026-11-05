@@ -1,0 +1,6 @@
+private/
+*.db
+__pycache__/
+.pytest_cache/
+data/bigdata.sqlite
+data/bigdata.tmp
