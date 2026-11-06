@@ -1,0 +1,5 @@
+# Optional. Only needed for the Qiskit backends; the rest of Quant Insight does not need these.
+qiskit>=2.1
+qiskit-aer>=0.17
+# Only for the real IBM Quantum backend and the fake-device noise tests:
+qiskit-ibm-runtime>=0.40
