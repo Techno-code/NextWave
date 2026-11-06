@@ -1,0 +1,118 @@
+id,domain,problem,decision_type,objective,key_constraints,typical_variables,formulation_family,trend_sensitivity
+BP0001,Marketing and Trends,Choose which viral trends to build campaigns around before they fade,Select trends to fund,Maximize expected engagement after decay,Campaign budget; max campaigns per week,"Trend engagement, decay half-life, cost, audience overlap",portfolio_selection,high
+BP0002,Marketing and Trends,Avoid funding several trends that reach the same audience,Select non-overlapping trends,Maximize unique reach,Budget; overlap penalty,"Audience overlap matrix, reach, cost",portfolio_selection,high
+BP0003,Marketing and Trends,Split an ad budget across channels with diminishing returns,Allocate spend per channel,Maximize conversions,Total budget; channel minimums and caps,"Spend per channel, response curves",budget_allocation,medium
+BP0004,Marketing and Trends,Pick influencers whose combined audiences cover the target segment,Select influencers,Maximize audience coverage per dollar,Budget; max influencers; brand safety,"Fee, follower overlap, engagement rate",set_cover,high
+BP0005,Marketing and Trends,Decide which products to feature in a seasonal promotion,Select featured products,Maximize promotional margin,Shelf or banner slots; inventory,"Margin, demand lift, stock level",knapsack,medium
+BP0006,Marketing and Trends,Plan content calendar slots across platforms,Assign content to slots,Maximize weighted reach,Posts per day; production capacity,"Content value, platform weight, effort",assignment,high
+BP0007,Marketing and Trends,Choose A/B tests to run given limited traffic,Select experiments,Maximize expected learning value,Traffic share; test duration,"Expected lift, variance, traffic needs",knapsack,medium
+BP0008,Marketing and Trends,Decide which sponsorships and events to join,Select events,Maximize leads per dollar,Budget; calendar conflicts,"Cost, expected leads, dates",portfolio_selection,low
+BP0009,Marketing and Trends,Time a product launch around competing cultural moments,Choose launch date,Maximize attention share,Production readiness; blackout dates,"Attention forecast, competitor launches",scheduling,high
+BP0010,Marketing and Trends,Reduce wasted spend on campaigns for short-lived memes,Set kill thresholds and funding tiers,Minimize wasted spend,Minimum test budget; review cadence,"Spend, decay rate, conversion",budget_allocation,high
+BP0011,Operations and Supply Chain,Decide how much stock of each item to order,Set order quantities,Minimize holding plus stockout cost,Warehouse capacity; supplier minimums,"Demand forecast, lead time, unit cost",knapsack,medium
+BP0012,Operations and Supply Chain,Choose warehouse locations to serve all customers,Select sites,Minimize logistics cost,Number of sites; service radius,"Site cost, distance, demand",facility_location,low
+BP0013,Operations and Supply Chain,Assign delivery orders to vehicles and routes,Route assignment,Minimize distance and lateness,Vehicle capacity; time windows,"Orders, locations, capacities",routing,medium
+BP0014,Operations and Supply Chain,Schedule production runs across machines,Sequence jobs,Minimize makespan and changeovers,Machine capacity; due dates,"Job time, setup time, deadlines",scheduling,low
+BP0015,Operations and Supply Chain,Pick suppliers to balance cost and risk,Select suppliers,Minimize cost subject to risk limit,Max share per supplier; quality floor,"Price, defect rate, delivery risk",portfolio_selection,medium
+BP0016,Operations and Supply Chain,Decide which orders to expedite,Select orders to expedite,Maximize avoided penalty,Expedite budget,"Penalty, expedite cost",knapsack,medium
+BP0017,Operations and Supply Chain,Reduce packaging waste while meeting protection standards,Select packaging options,Minimize material waste,Damage rate limit; cost cap,"Material use, damage risk, cost",multi_dim_knapsack,low
+BP0018,Operations and Supply Chain,Allocate dock doors to inbound trucks,Assign trucks to doors,Minimize wait time,Door availability; arrival windows,"Arrival time, unload time",assignment,medium
+BP0019,Operations and Supply Chain,Choose which SKUs to discontinue,Select SKUs to drop,Maximize freed capital without losing key customers,Category coverage minimums,"SKU margin, velocity, cannibalization",knapsack,medium
+BP0020,Operations and Supply Chain,Pick cross-docking hubs,Select hubs,Minimize transit cost,Hub count; capacity,"Flow volumes, hub cost",facility_location,low
+BP0021,Finance and Investment,Allocate capital across business units,Allocate budget,Maximize return on capital,Total capital; unit minimums,"Expected return, risk, correlation",portfolio_selection,low
+BP0022,Finance and Investment,Choose projects to fund from a long proposal list,Select projects,Maximize net present value,Capital budget; staffing,"NPV, cost, dependencies",knapsack,low
+BP0023,Finance and Investment,Decide which debts to pay down first,Order repayments,Minimize total interest,Cash available; minimum payments,"Balance, rate",budget_allocation,low
+BP0024,Finance and Investment,Balance cash reserves against investment,Set reserve level,Maximize return with liquidity guarantee,Minimum runway; covenant limits,"Burn rate, yields",budget_allocation,medium
+BP0025,Finance and Investment,Select hedging instruments for currency exposure,Select hedges,Minimize variance of cash flows,Premium budget,"Exposure, hedge cost, correlation",portfolio_selection,medium
+BP0026,Finance and Investment,Decide which receivables to factor,Select invoices,Maximize liquidity per fee,Fee cap; customer concentration,"Invoice size, fee, due date",knapsack,medium
+BP0027,Finance and Investment,Choose insurance coverage levels,Select coverage,Minimize expected loss plus premium,Premium budget; mandatory coverage,"Premium, deductible, loss probability",multi_dim_knapsack,low
+BP0028,Finance and Investment,Plan capital expenditure timing,Schedule purchases,Maximize benefit with smooth cash flow,Quarterly cap,"Cost, benefit, dependencies",scheduling,low
+BP0029,Finance and Investment,Rank cost-cutting initiatives,Select initiatives,Maximize savings with minimal damage,Disruption budget,"Savings, disruption score",knapsack,medium
+BP0030,Finance and Investment,Allocate R and D budget across projects,Allocate funds,Maximize expected breakthroughs,Budget; staged gates,"Success probability, payoff",portfolio_selection,medium
+BP0031,Human Resources,Decide which roles to hire first,Select hires,Maximize capacity gain,Headcount budget,"Salary, productivity, urgency",knapsack,medium
+BP0032,Human Resources,Build shift schedules that cover demand,Assign employees to shifts,Minimize labor cost with full coverage,Labor law; availability; skills,"Demand, availability, wage",scheduling,medium
+BP0033,Human Resources,Assign employees to projects by skill,Assign staff,Maximize skill match,Hours per person; project needs,"Skills, availability",assignment,medium
+BP0034,Human Resources,Choose training programs for the workforce,Select programs,Maximize skill uplift,Training budget; time off limits,"Cost, hours, skill gain",knapsack,low
+BP0035,Human Resources,Plan overtime versus temporary hires,Choose staffing mix,Minimize cost,Overtime caps; contract limits,"Rates, demand",budget_allocation,medium
+BP0036,Human Resources,Reduce attrition with limited retention spend,Select retention actions,Maximize retained value,Retention budget,"Flight risk, replacement cost",knapsack,medium
+BP0037,Human Resources,Allocate bonus pool fairly,Distribute pool,Maximize motivation with fairness,Pool size; band limits,"Performance, tenure",budget_allocation,low
+BP0038,Human Resources,Pick interview slots across panels,Schedule interviews,Minimize time to hire,Interviewer availability,"Slots, candidates",assignment,medium
+BP0039,Human Resources,Select benefits packages,Select benefits,Maximize employee value,Benefits budget,"Cost, uptake, value",multi_dim_knapsack,low
+BP0040,Product and Engineering,Prioritize features for the next release,Select features,Maximize customer value,Engineering capacity; dependencies,"Value, effort, risk",knapsack,medium
+BP0041,Product and Engineering,Decide which bugs to fix this sprint,Select tickets,Maximize risk reduction,Sprint capacity,"Severity, effort",knapsack,high
+BP0042,Product and Engineering,Choose technical debt to repay,Select refactors,Maximize future velocity,Capacity share,"Interest cost, effort",knapsack,low
+BP0043,Product and Engineering,Allocate cloud budget across services,Allocate spend,Minimize cost with performance targets,Latency SLO; budget,"Usage, price, performance",budget_allocation,medium
+BP0044,Product and Engineering,Select which integrations to build,Select integrations,Maximize adoption,Team capacity,"Demand, effort, partner reach",knapsack,medium
+BP0045,Product and Engineering,Plan release train timing,Schedule releases,Minimize conflicts,Freeze windows; dependencies,"Features, owners",scheduling,low
+BP0046,Product and Engineering,Decide which experiments to ship,Select experiments,Maximize validated lift,Traffic; interactions,"Lift, interaction penalty",portfolio_selection,medium
+BP0047,Product and Engineering,Choose test cases to run under a time cap,Select tests,Maximize defect detection,Test time budget,"Failure history, runtime",set_cover,low
+BP0048,Product and Engineering,Decide build versus buy for components,Select option per component,Minimize total cost of ownership,Budget; strategic must-builds,"Build cost, license cost",assignment,low
+BP0049,Retail and E-commerce,Set prices for a product catalog,Set price points,Maximize profit,Price bands; brand rules,"Elasticity, cost",budget_allocation,high
+BP0050,Retail and E-commerce,Allocate shelf space to categories,Assign space,Maximize sales per square meter,Total space; category minimums,"Sales density, facings",multi_dim_knapsack,medium
+BP0051,Retail and E-commerce,Decide markdown timing for seasonal goods,Schedule markdowns,Maximize sell-through margin,End-of-season date,"Stock, price curve",scheduling,high
+BP0052,Retail and E-commerce,Choose store locations,Select sites,Maximize catchment revenue,Capex; cannibalization,"Footfall, rent, overlap",facility_location,low
+BP0053,Retail and E-commerce,Select products for a flash sale,Select SKUs,Maximize traffic and margin,Inventory; margin floor,"Margin, appeal, stock",knapsack,high
+BP0054,Retail and E-commerce,Plan fulfillment center assignment,Assign orders to centers,Minimize shipping cost,Center capacity,"Distance, cost",assignment,medium
+BP0055,Retail and E-commerce,Pick loyalty rewards to offer,Select rewards,Maximize retention per cost,Reward budget,"Cost, appeal",knapsack,medium
+BP0056,Retail and E-commerce,Choose marketplaces to sell on,Select channels,Maximize net revenue,Fees; operations capacity,"Fees, reach",portfolio_selection,medium
+BP0057,Retail and E-commerce,Reduce return rates with limited intervention budget,Select interventions,Minimize returns cost,Budget,"Return rate, fix cost",knapsack,medium
+BP0058,Healthcare Operations,Schedule operating rooms,Assign surgeries to rooms,Maximize utilization,Staff; equipment; time,"Case length, priority",scheduling,medium
+BP0059,Healthcare Operations,Staff nurses across wards,Assign nurses,Minimize cost with safe ratios,Ratios; shift rules,"Patient load, skills",scheduling,medium
+BP0060,Healthcare Operations,Select equipment purchases,Select equipment,Maximize patient benefit,Capital budget,"Cost, usage, benefit",knapsack,low
+BP0061,Healthcare Operations,Allocate beds across departments,Assign beds,Minimize wait time,Total beds,"Demand, length of stay",budget_allocation,high
+BP0062,Healthcare Operations,Choose clinic locations,Select sites,Maximize population served,Budget; travel time,"Population, cost",facility_location,low
+BP0063,Healthcare Operations,Prioritize vaccination or screening campaigns,Select campaigns,Maximize health outcomes,Budget; staff,"Cost, impact",knapsack,medium
+BP0064,Healthcare Operations,Plan inventory of perishable supplies,Set order sizes,Minimize waste and stockout,Shelf life; storage,"Demand, expiry",knapsack,medium
+BP0065,Healthcare Operations,Assign ambulances to stations,Assign units,Minimize response time,Fleet size,"Demand map, distances",facility_location,medium
+BP0066,"Energy, Sustainability and Waste",Choose efficiency upgrades,Select upgrades,Maximize emission reduction per dollar,Capex,"Savings, cost, payback",knapsack,low
+BP0067,"Energy, Sustainability and Waste",Plan energy purchases across sources,Allocate supply,Minimize cost and emissions,Reliability; contracts,"Price, carbon intensity",budget_allocation,medium
+BP0068,"Energy, Sustainability and Waste",Select offset projects,Select projects,Maximize verified reduction,Budget; quality standards,"Cost per ton, quality",portfolio_selection,low
+BP0069,"Energy, Sustainability and Waste",Minimize waste in campaign production,Select materials and formats,Minimize physical waste,Quality bar; budget,"Material use, reuse rate",multi_dim_knapsack,medium
+BP0070,"Energy, Sustainability and Waste",Schedule machine usage to avoid peak tariffs,Schedule loads,Minimize energy cost,Deadlines,"Tariff, load",scheduling,low
+BP0071,"Energy, Sustainability and Waste",Choose recycling and reuse partners,Select partners,Maximize diverted waste,Cost; distance,"Capacity, cost",facility_location,low
+BP0072,"Energy, Sustainability and Waste",Plan fleet electrification,Select vehicles to replace,Maximize emission cut,Capex; charging,"Mileage, cost",knapsack,low
+BP0073,"Energy, Sustainability and Waste",Pick suppliers by environmental score,Select suppliers,Maximize score within price cap,Price; supply security,"Score, price",portfolio_selection,low
+BP0074,Customer Success and Service,Staff support agents by contact forecast,Assign agents,Minimize wait with cost cap,Shifts; skills,"Volume, handle time",scheduling,high
+BP0075,Customer Success and Service,Select accounts for proactive outreach,Select accounts,Maximize saved revenue,Team capacity,"Churn risk, value",knapsack,medium
+BP0076,Customer Success and Service,Route tickets to specialist teams,Assign tickets,Minimize resolution time,Team capacity,"Skill, priority",assignment,high
+BP0077,Customer Success and Service,Choose self-service content to build,Select articles,Maximize deflection,Writing capacity,"Volume, effort",knapsack,medium
+BP0078,Customer Success and Service,Decide which customers get premium support,Select customers,Maximize retention,Cost cap,"Value, risk",knapsack,low
+BP0079,Customer Success and Service,Allocate discount budget to save at-risk customers,Allocate discounts,Maximize retained margin,Discount pool,"Churn curve, margin",budget_allocation,medium
+BP0080,Customer Success and Service,Plan onboarding resource allocation,Allocate onboarding hours,Maximize activation,Hours,"Account size, complexity",budget_allocation,medium
+BP0081,Sales and Revenue,Assign sales reps to territories,Assign territories,Maximize expected revenue,Workload balance,"Potential, travel",assignment,low
+BP0082,Sales and Revenue,Prioritize leads,Select leads to pursue,Maximize pipeline value,Rep hours,"Win probability, size",knapsack,high
+BP0083,Sales and Revenue,Set quotas across a team,Distribute quota,Maximize attainment,Company target,"Capacity, history",budget_allocation,low
+BP0084,Sales and Revenue,Choose partners for co-selling,Select partners,Maximize revenue per effort,Support capacity,"Reach, fit",portfolio_selection,low
+BP0085,Sales and Revenue,Decide which deals get executive support,Select deals,Maximize expected wins,Executive hours,"Deal size, odds",knapsack,medium
+BP0086,Sales and Revenue,Bundle products for cross-sell,Select bundles,Maximize attach revenue,Margin floor,"Affinity, margin",set_cover,medium
+BP0087,Sales and Revenue,Plan trade show attendance,Select shows,Maximize leads per cost,Budget; calendar,"Cost, leads",knapsack,low
+BP0088,Real Estate and Facilities,Decide which offices to keep,Select sites to retain,Minimize cost with coverage,Headcount fit,"Rent, utilization",facility_location,low
+BP0089,Real Estate and Facilities,Assign teams to floor space,Assign teams,Maximize collaboration and utilization,Capacity,"Team size, adjacency",assignment,low
+BP0090,Real Estate and Facilities,Select maintenance tasks under budget,Select tasks,Maximize risk reduction,Budget; downtime,"Failure risk, cost",knapsack,low
+BP0091,Real Estate and Facilities,Schedule cleaning and maintenance crews,Assign crews,Minimize cost,Hours; access windows,"Task time, location",scheduling,low
+BP0092,Real Estate and Facilities,Choose renovation projects,Select projects,Maximize value uplift,Capex,"Cost, uplift",knapsack,low
+BP0093,Real Estate and Facilities,Plan parking and desk allocation,Assign resources,Maximize usage,Availability,Demand,assignment,medium
+BP0094,Media and Entertainment,Choose content to greenlight,Select projects,Maximize expected audience,Production budget,"Cost, forecast, genre overlap",portfolio_selection,high
+BP0095,Media and Entertainment,Schedule programming slots,Assign shows to slots,Maximize ratings,Contracts,Audience by slot,assignment,high
+BP0096,Media and Entertainment,Select licensing deals,Select licenses,Maximize catalog value,License budget,"Cost, demand",knapsack,medium
+BP0097,Media and Entertainment,Decide which creators to sponsor,Select creators,Maximize engagement,Budget,"Fee, reach, overlap",portfolio_selection,high
+BP0098,Media and Entertainment,Plan release dates to avoid clashes,Schedule releases,Maximize opening performance,Competitor dates,"Audience, competition",scheduling,high
+BP0099,Media and Entertainment,Allocate marketing spend across titles,Allocate budget,Maximize total revenue,Budget,Response curves,budget_allocation,high
+BP0100,Education and Nonprofit,Choose programs to fund,Select programs,Maximize beneficiaries reached,Budget,"Cost per beneficiary, impact",knapsack,low
+BP0101,Education and Nonprofit,Assign volunteers to shifts and sites,Assign volunteers,Maximize coverage,Availability,"Skills, location",assignment,medium
+BP0102,Education and Nonprofit,Schedule classes and rooms,Assign classes to rooms,Minimize conflicts,Room capacity; teacher availability,"Enrollment, time slots",scheduling,low
+BP0103,Education and Nonprofit,Allocate grant funds across initiatives,Allocate funds,Maximize impact,Donor restrictions,Impact curves,budget_allocation,low
+BP0104,Education and Nonprofit,Plan fundraising campaigns,Select campaigns,Maximize net funds,Staff time,"Expected gift, cost",knapsack,medium
+BP0105,Education and Nonprofit,Choose scholarship recipients,Select recipients,Maximize outcomes and fairness,Fund total,"Need, merit",knapsack,low
+BP0106,"Risk, Compliance and Security",Choose security controls under budget,Select controls,Maximize risk reduction,Budget,"Threat coverage, cost",set_cover,medium
+BP0107,"Risk, Compliance and Security",Prioritize audits,Select audits,Maximize detected risk,Auditor hours,"Risk score, effort",knapsack,low
+BP0108,"Risk, Compliance and Security",Decide which vulnerabilities to patch first,Order patches,Maximize risk reduced,Maintenance windows,"Severity, exposure",knapsack,high
+BP0109,"Risk, Compliance and Security",Allocate monitoring across systems,Allocate coverage,Maximize detection,Tool capacity,"Asset value, threat",budget_allocation,medium
+BP0110,"Risk, Compliance and Security",Select vendors by risk tier,Select vendors,Minimize third-party risk,Cost,"Risk score, cost",portfolio_selection,low
+BP0111,"Risk, Compliance and Security",Plan business continuity investments,Select measures,Minimize downtime loss,Budget,"Probability, impact, cost",knapsack,low
+BP0112,Strategy and Portfolio,Select markets to enter,Select markets,Maximize long-term revenue,Capital; management attention,"Size, risk, cost",portfolio_selection,low
+BP0113,Strategy and Portfolio,Decide which acquisitions to pursue,Select targets,Maximize strategic value,Capital,"Price, synergy, overlap",portfolio_selection,low
+BP0114,Strategy and Portfolio,Balance short-term and long-term initiatives,Allocate across horizons,Maximize risk-adjusted value,Horizon mix targets,"Return, time to value",budget_allocation,medium
+BP0115,Strategy and Portfolio,Choose which partnerships to deepen,Select partners,Maximize joint value,Team capacity,"Value, effort",knapsack,low
+BP0116,Strategy and Portfolio,Prune a product portfolio,Select products to keep,Maximize profit with focus,Complexity cap,"Margin, strategic fit",portfolio_selection,medium
+BP0117,Strategy and Portfolio,Sequence initiatives with dependencies,Order initiatives,Maximize earliest value,Capacity per quarter,"Dependencies, value",scheduling,low

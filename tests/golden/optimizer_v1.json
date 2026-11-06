@@ -1,0 +1,208 @@
+[
+ {
+  "portfolios": [
+   {
+    "trends": [
+     "Retro handheld gaming",
+     "Protein snacks",
+     "Local-first apps",
+     "Thrift-haul videos"
+    ],
+    "spend": 12,
+    "net_value": 64.83,
+    "verified": true
+   },
+   {
+    "trends": [
+     "Quiet luxury packaging",
+     "Protein snacks",
+     "Local-first apps",
+     "Thrift-haul videos"
+    ],
+    "spend": 12,
+    "net_value": 63.35,
+    "verified": true
+   },
+   {
+    "trends": [
+     "Local-first apps",
+     "Thrift-haul videos",
+     "Cold-plunge routines"
+    ],
+    "spend": 11,
+    "net_value": 62.78,
+    "verified": true
+   }
+  ],
+  "recommended": "classical exact",
+  "waste_avoided_pct": 36.0,
+  "classical_objective": 64.83,
+  "quantum": {
+   "objective": 58.06,
+   "ratio": 0.896,
+   "qubits": 14,
+   "shots": 1024,
+   "depth": 74,
+   "raw_feasibility": 0.746,
+   "cvar_start": 0.001,
+   "cvar_end": 0.001,
+   "verified": true,
+   "trends": [
+    "Quiet luxury packaging",
+    "Retro handheld gaming",
+    "Local-first apps",
+    "Cold-plunge routines"
+   ]
+  }
+ },
+ {
+  "portfolios": [
+   {
+    "trends": [
+     "Protein snacks",
+     "AI study planners"
+    ],
+    "spend": 9,
+    "net_value": 48.65,
+    "verified": true
+   },
+   {
+    "trends": [
+     "Protein snacks",
+     "Local-first apps"
+    ],
+    "spend": 8,
+    "net_value": 44.6,
+    "verified": true
+   },
+   {
+    "trends": [
+     "AI study planners",
+     "Cold-plunge routines"
+    ],
+    "spend": 9,
+    "net_value": 38.91,
+    "verified": true
+   }
+  ],
+  "recommended": "classical exact",
+  "waste_avoided_pct": 77.6,
+  "classical_objective": 48.65,
+  "quantum": {
+   "objective": 48.65,
+   "ratio": 1.0,
+   "qubits": 14,
+   "shots": 1024,
+   "depth": 74,
+   "raw_feasibility": 0.503,
+   "cvar_start": 0.002,
+   "cvar_end": 0.001,
+   "verified": true,
+   "trends": [
+    "Protein snacks",
+    "AI study planners"
+   ]
+  }
+ },
+ {
+  "portfolios": [
+   {
+    "trends": [
+     "Quiet luxury packaging",
+     "Micro-session fitness",
+     "Retro handheld gaming"
+    ],
+    "spend": 12,
+    "net_value": 91.17,
+    "verified": true
+   },
+   {
+    "trends": [
+     "Micro-session fitness",
+     "Retro handheld gaming",
+     "Slow-travel itineraries"
+    ],
+    "spend": 11,
+    "net_value": 84.18,
+    "verified": true
+   },
+   {
+    "trends": [
+     "Quiet luxury packaging",
+     "Retro handheld gaming",
+     "Slow-travel itineraries"
+    ],
+    "spend": 13,
+    "net_value": 84.05,
+    "verified": true
+   }
+  ],
+  "recommended": "classical exact",
+  "waste_avoided_pct": 55.3,
+  "classical_objective": 91.17,
+  "quantum": {
+   "objective": 91.17,
+   "ratio": 1.0,
+   "qubits": 14,
+   "shots": 1024,
+   "depth": 74,
+   "raw_feasibility": 0.664,
+   "cvar_start": 0.001,
+   "cvar_end": 0.001,
+   "verified": true,
+   "trends": [
+    "Quiet luxury packaging",
+    "Micro-session fitness",
+    "Retro handheld gaming"
+   ]
+  }
+ },
+ {
+  "portfolios": [
+   {
+    "trends": [
+     "Protein snacks",
+     "AI study planners"
+    ],
+    "spend": 6,
+    "net_value": 25.63,
+    "verified": true
+   },
+   {
+    "trends": [
+     "Micro-session fitness",
+     "Protein snacks"
+    ],
+    "spend": 5,
+    "net_value": 25.14,
+    "verified": true
+   },
+   {
+    "trends": [
+     "Thrift-haul videos"
+    ],
+    "spend": 5,
+    "net_value": 20.43,
+    "verified": true
+   }
+  ],
+  "recommended": "classical exact",
+  "waste_avoided_pct": 73.3,
+  "classical_objective": 25.63,
+  "quantum": {
+   "objective": 25.63,
+   "ratio": 1.0,
+   "qubits": 13,
+   "shots": 1024,
+   "depth": 69,
+   "raw_feasibility": 0.467,
+   "cvar_start": 0.002,
+   "cvar_end": 0.0,
+   "verified": true,
+   "trends": [
+    "Protein snacks",
+    "AI study planners"
+   ]
+  }
+ }
+]

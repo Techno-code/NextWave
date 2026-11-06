@@ -1,0 +1,29 @@
+id,reviewed,rule
+BP0011,budget_allocation,R1 divisible quantity ("how much")
+BP0064,budget_allocation,R1 divisible quantity ("how much")
+BP0021,budget_allocation,R1 divisible amount split across units
+BP0030,budget_allocation,R1 divisible amount split across projects
+BP0050,budget_allocation,R1 divisible space split across categories
+BP0038,scheduling,R3 decision type is scheduling (timing of interviews)
+BP0108,scheduling,R3 ordering work within maintenance windows
+BP0048,knapsack,R2c one option chosen per component under a budget
+BP0084,knapsack,R2c single capacity limit and no interaction stated
+BP0094,knapsack,R2c single budget and no interaction stated
+BP0097,knapsack,R2c single budget and no interaction stated
+BP0113,knapsack,R2c single capital limit and no interaction stated
+BP0086,knapsack,R2c margin floor only; no coverage requirement stated
+BP0039,knapsack,R2c single benefits budget
+BP0068,multi_dim_knapsack,R2b budget plus quality standard
+BP0112,multi_dim_knapsack,R2b capital plus management attention
+BP0056,multi_dim_knapsack,R2b fees plus operations capacity
+BP0007,multi_dim_knapsack,R2b traffic share plus test duration
+BP0005,multi_dim_knapsack,R2b slots plus inventory
+BP0022,multi_dim_knapsack,R2b capital plus staffing
+BP0034,multi_dim_knapsack,R2b training budget plus time-off limits
+BP0026,multi_dim_knapsack,R2b fee cap plus customer concentration
+BP0053,multi_dim_knapsack,R2b inventory plus margin floor
+BP0090,multi_dim_knapsack,R2b budget plus downtime
+BP0072,multi_dim_knapsack,R2b capex plus charging capacity
+BP0063,multi_dim_knapsack,R2b budget plus staff
+BP0019,multi_dim_knapsack,R2b category coverage minimums plus cost
+BP0087,portfolio_selection,R2a calendar conflicts are interactions (same as BP0008)

@@ -1,0 +1,225 @@
+{
+ "version": 4,
+ "trained_at": "2026-11-02T20:24:20",
+ "dataset_rows": 216,
+ "feedback_examples": 0,
+ "dataset_sha256": "7d79caed3c6593c1",
+ "families": [
+  "assignment",
+  "budget_allocation",
+  "facility_location",
+  "knapsack",
+  "multi_dim_knapsack",
+  "portfolio_selection",
+  "routing",
+  "scheduling",
+  "set_cover"
+ ],
+ "metrics": {
+  "cv_accuracy": 0.598,
+  "nearest_row_baseline": 0.393,
+  "majority_baseline": 0.274,
+  "calibration_error_ece": 0.162,
+  "top2_accuracy": 0.735,
+  "top3_accuracy": 0.863,
+  "group_accuracy": 0.803,
+  "group_majority_baseline": 0.521,
+  "group_confident": [
+   {
+    "threshold": 0.5,
+    "coverage": 0.906,
+    "accuracy": 0.821,
+    "answered": 106,
+    "ci95": [
+     0.737,
+     0.882
+    ]
+   },
+   {
+    "threshold": 0.6,
+    "coverage": 0.803,
+    "accuracy": 0.83,
+    "answered": 94,
+    "ci95": [
+     0.741,
+     0.892
+    ]
+   },
+   {
+    "threshold": 0.7,
+    "coverage": 0.701,
+    "accuracy": 0.89,
+    "answered": 82,
+    "ci95": [
+     0.804,
+     0.941
+    ]
+   },
+   {
+    "threshold": 0.8,
+    "coverage": 0.65,
+    "accuracy": 0.908,
+    "answered": 76,
+    "ci95": [
+     0.822,
+     0.955
+    ]
+   }
+  ],
+  "operating_point": {
+   "threshold": 0.8,
+   "coverage": 0.65,
+   "accuracy": 0.908,
+   "answered": 76,
+   "ci95": [
+    0.822,
+    0.955
+   ],
+   "target": 0.9
+  },
+  "fine_confident": [
+   {
+    "threshold": 0.5,
+    "coverage": 0.735,
+    "accuracy": 0.651,
+    "answered": 86,
+    "ci95": [
+     0.546,
+     0.743
+    ]
+   },
+   {
+    "threshold": 0.6,
+    "coverage": 0.632,
+    "accuracy": 0.676,
+    "answered": 74,
+    "ci95": [
+     0.563,
+     0.771
+    ]
+   },
+   {
+    "threshold": 0.7,
+    "coverage": 0.53,
+    "accuracy": 0.71,
+    "answered": 62,
+    "ci95": [
+     0.587,
+     0.808
+    ]
+   }
+  ],
+  "folds": 5,
+  "held_out_problems": 117
+ },
+ "group_map": {
+  "knapsack": "select",
+  "multi_dim_knapsack": "select",
+  "portfolio_selection": "select",
+  "set_cover": "select",
+  "budget_allocation": "allocate",
+  "assignment": "assign",
+  "scheduling": "schedule",
+  "facility_location": "locate",
+  "routing": "route"
+ },
+ "synthetic_examples": 2700,
+ "notes": "Folds hold out whole real problems, so scores measure unseen problems; the expert-written training sentences are never used for scoring. Primary metrics use the reviewed labels (docs/LABEL_RUBRIC.md, data/label_review.csv). original_label_metrics use the labels exactly as supplied. The reviewed-label score was produced after the first accuracy run by a single reviewer, so it is a development number; an independent relabelling of a random sample is still required.",
+ "original_label_metrics": {
+  "cv_accuracy": 0.65,
+  "nearest_row_baseline": 0.402,
+  "majority_baseline": 0.333,
+  "calibration_error_ece": 0.118,
+  "top2_accuracy": 0.786,
+  "top3_accuracy": 0.872,
+  "group_accuracy": 0.795,
+  "group_majority_baseline": 0.564,
+  "group_confident": [
+   {
+    "threshold": 0.5,
+    "coverage": 0.897,
+    "accuracy": 0.838,
+    "answered": 105,
+    "ci95": [
+     0.756,
+     0.896
+    ]
+   },
+   {
+    "threshold": 0.6,
+    "coverage": 0.838,
+    "accuracy": 0.857,
+    "answered": 98,
+    "ci95": [
+     0.774,
+     0.913
+    ]
+   },
+   {
+    "threshold": 0.7,
+    "coverage": 0.684,
+    "accuracy": 0.887,
+    "answered": 80,
+    "ci95": [
+     0.8,
+     0.94
+    ]
+   },
+   {
+    "threshold": 0.8,
+    "coverage": 0.615,
+    "accuracy": 0.903,
+    "answered": 72,
+    "ci95": [
+     0.813,
+     0.952
+    ]
+   }
+  ],
+  "operating_point": {
+   "threshold": 0.8,
+   "coverage": 0.615,
+   "accuracy": 0.903,
+   "answered": 72,
+   "ci95": [
+    0.813,
+    0.952
+   ],
+   "target": 0.9
+  },
+  "fine_confident": [
+   {
+    "threshold": 0.5,
+    "coverage": 0.769,
+    "accuracy": 0.756,
+    "answered": 90,
+    "ci95": [
+     0.658,
+     0.833
+    ]
+   },
+   {
+    "threshold": 0.6,
+    "coverage": 0.65,
+    "accuracy": 0.763,
+    "answered": 76,
+    "ci95": [
+     0.656,
+     0.845
+    ]
+   },
+   {
+    "threshold": 0.7,
+    "coverage": 0.513,
+    "accuracy": 0.767,
+    "answered": 60,
+    "ci95": [
+     0.646,
+     0.856
+    ]
+   }
+  ],
+  "folds": 5,
+  "held_out_problems": 117
+ }
+}
